@@ -263,7 +263,7 @@
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             }
         ]
@@ -367,18 +367,19 @@
 
     /*====== SidebarCart ======*/
     function miniCart() {
-        var navbarTrigger = $('.cart-active'),
+        var
+            // navbarTrigger = $('.cart-active'),
             endTrigger = $('.cart-close'),
             container = $('.sidebar-cart-active'),
             wrapper = $('.main-wrapper');
 
         wrapper.prepend('<div class="body-overlay"></div>');
 
-        navbarTrigger.on('click', function (e) {
-            e.preventDefault();
-            container.addClass('inside');
-            wrapper.addClass('overlay-active');
-        });
+        // navbarTrigger.on('click', function (e) {
+        //     e.preventDefault();
+        //     container.addClass('inside');
+        //     wrapper.addClass('overlay-active');
+        // });
 
         endTrigger.on('click', function () {
             container.removeClass('inside');
@@ -1033,6 +1034,42 @@
         ]
     });
 
+
+
+    $('.brand-logo-wrap-2').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        fade: false,
+        loop: true,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
     /*------------------------
         Sidebar sticky active
     -------------------------- */
@@ -1185,3 +1222,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// SIDEBAR FILTER
+
+$('.sidebar-open').click(function () {
+    $('.sidebar_widget').addClass('active')
+})
+$('.sidebar-close').click(function () {
+    $('.sidebar_widget').removeClass('active')
+})
+/*---widget sub categories---*/
+$(".widget_sub_categories > a").on("click", function () {
+    // Toggle the 'active' class on the clicked anchor tag
+    $(this).toggleClass('active');
+
+    // Find the sibling .widget_dropdown_categories and toggle its visibility
+    $(this).siblings('.widget_dropdown_categories').slideToggle('medium');
+});
+
+
+// PRICE VALIDATION
+
+function validateInput(input) {
+    // Remove any non-numeric characters
+    input.value = input.value.replace(/\D/g, ''); // \D matches any non-digit character
+
+    // You can add further validation here if needed
+}
