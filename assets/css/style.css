@@ -19429,6 +19429,9 @@ table .fa-trash {
   .myaccount-content {
     padding: 15px 15px !important;
   }
+  .single-store.mb-50 {
+    margin-bottom: 20px;
+  }
 }
 ul.avera-menu {
   display: flex;
@@ -19448,6 +19451,12 @@ ul.avera-menu > li {
   font-weight: bold;
   /* padding-left: 27px; */
 }
-.mobile-header-active .clickalbe-sidebar-wrap .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.menu-first{
+.mobile-header-active
+  .clickalbe-sidebar-wrap
+  .mobile-header-content-area
+  .mobile-menu-wrap
+  nav
+  .mobile-menu
+  li.menu-first {
   padding-left: 16px;
 }
