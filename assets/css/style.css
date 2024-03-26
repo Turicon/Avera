@@ -807,7 +807,7 @@ ul {
 }
 
 .pt-95 {
-  padding-top: 95px;
+  padding-top: 75px;
 }
 
 .pt-90 {
@@ -3215,9 +3215,9 @@ nav ul {
 }
 .main-menu > nav > ul > li > ul.mega-menu-style > li > ul > li {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333%;
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 .main-menu
   > nav
@@ -3230,10 +3230,10 @@ nav ul {
   > a.dropdown-title {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main-menu > nav > ul > li > ul.mega-menu-style > li > ul > li ul li {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .main-menu
   > nav
@@ -3921,6 +3921,11 @@ nav ul {
 .search-wrap-1 form {
   position: relative;
   overflow: hidden;
+  position: absolute;
+  overflow: hidden;
+  width: 260px;
+  right: -110px;
+  top: 20px;
 }
 .search-wrap-1 form input {
   background-color: #fff;
@@ -4902,9 +4907,9 @@ nav ul {
   .clickalbe-sidebar-wrap
   .mobile-header-content-area
   .mobile-header-padding-border-3 {
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd;
   margin-bottom: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
 }
 .mobile-header-active
   .clickalbe-sidebar-wrap
@@ -5109,7 +5114,7 @@ nav ul {
   ul
   li
   a {
-  padding: 10px 15px 5px;
+  padding: 10px 10px 5px;
   font-size: 14px;
   color: #333;
 }
@@ -5137,7 +5142,7 @@ nav ul {
   ul
   li
   a {
-  padding: 10px 30px 5px;
+  padding: 10px 18px 5px;
   font-size: 14px;
   color: #333;
 }
@@ -5407,7 +5412,7 @@ nav ul {
 
 .categori-hide-2 {
   display: none;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 /*-------- 4. Slider style ---------*/
@@ -11323,7 +11328,7 @@ nav ul {
 }
 .banner-wrap .banner-img-zoom a img {
   width: 100%;
-  height: 235px;
+  height: 241px;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.5s ease 0s;
@@ -13599,7 +13604,7 @@ nav ul {
 @media only screen and (max-width: 767px) {
   .subscribe-form-2 .subscribe-form-style-2 .mc-form-2 .clear-2 input {
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -14308,11 +14313,13 @@ nav ul {
 }
 .blog-wrap .blog-img a img {
   width: 100%;
+  aspect-ratio: 370/250;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
+
 @media only screen and (max-width: 767px) {
   .blog-wrap .blog-img.mb-25 {
     margin-bottom: 15px;
@@ -14414,10 +14421,10 @@ nav ul {
   margin-bottom: 28px;
 }
 .single-sidebar-blog .sidebar-blog-img {
-  margin-right: 20px;
-  -webkit-box-flex: 0;
+  margin-right: 14px;
+  /* -webkit-box-flex: 0;
   -ms-flex: 0 0 30%;
-  flex: 0 0 30%;
+  flex: 0 0 30%; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-sidebar-blog .sidebar-blog-img {
@@ -14437,13 +14444,21 @@ nav ul {
   display: block;
 }
 .single-sidebar-blog .sidebar-blog-img a img {
-  width: 100%;
+  width: 70px;
+  aspect-ratio: 1/1;
+}
+.single-sidebar-blog .sidebar-blog-content {
+  width: calc(100% - 70px);
 }
 .single-sidebar-blog .sidebar-blog-content h5 {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   margin: 0 0 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .single-sidebar-blog .sidebar-blog-content h5 a {
   color: #000000;
@@ -16038,7 +16053,7 @@ nav ul {
 }
 @media only screen and (max-width: 767px) {
   .sidebar-wrapper {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -18486,9 +18501,17 @@ h3.cart-page-title {
 /*------ 26. Blog details style  -------*/
 .blog-details-top .blog-details-img {
   position: relative;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f0f4f6;
 }
 .blog-details-top .blog-details-img img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f0f4f6;
 }
 .blog-details-top .blog-details-img .video-icon {
   left: 0;
@@ -18513,11 +18536,12 @@ h3.cart-page-title {
   background-color: #ff2f2f;
 }
 .blog-details-top .blog-details-content {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 767px) {
   .blog-details-top .blog-details-content {
-    margin-top: 15px;
+    margin-top: 12px;
+    font-size: 13px;
   }
 }
 .blog-details-top .blog-details-content .blog-meta-2 ul {
@@ -18573,9 +18597,9 @@ h3.cart-page-title {
 }
 @media only screen and (max-width: 767px) {
   .blog-details-top .blog-details-content h1 {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 8px 0 12px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 8px 0 7px;
   }
 }
 .blog-details-top .blog-details-content p {
@@ -19226,6 +19250,18 @@ table .fa-trash {
   padding-left: 3rem;
   font-size: 15px;
 }
+
+/* Blogs Starts*/
+.blog-wrap .blog-content h1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+/* Blogs Ends */
 @media only screen and (max-width: 767px) {
   .product-details-content.pro-details-content-mrg .pro-details-price {
     margin: 18px 0 18px;
@@ -19285,6 +19321,15 @@ table .fa-trash {
   }
 }
 @media (max-width: 576px) {
+  .blog-wrap .blog-content .blog-meta ul li:first-child {
+    display: none;
+  }
+  .blog-wrap .blog-content h1 {
+    font-size: 15px;
+  }
+  .blog-wrap .blog-content .blog-meta ul li {
+    font-size: 13px;
+  }
   .slider-bg {
     height: 345px;
     background-size: 100% 100%;
@@ -19385,32 +19430,24 @@ table .fa-trash {
     padding: 15px 15px !important;
   }
 }
-ul.avera-menu{
+ul.avera-menu {
   display: flex;
   align-items: center;
 }
-ul.avera-menu>li{
- width: 10%;
- text-align:center;
- line-height: 5px;
+ul.avera-menu > li {
+  width: 10%;
+  text-align: center;
+  line-height: 5px;
 }
-/* ul.avera-menu>li a{
-  position: relative;
-}
-ul.avera-menu>li a:after{
-  content: '';
-  position: absolute;
-  right: -8px;
-  top: 0;
-  width: 2px;
-  height: 40px;
-  background-color: red;
-
-} */
-
-
-
 
 .main-menu.main-menu-lh-2 > nav > ul > li {
   line-height: 20px;
+}
+.mobile-menu .dropdown li span {
+  color: #e81d25;
+  font-weight: bold;
+  /* padding-left: 27px; */
+}
+.mobile-header-active .clickalbe-sidebar-wrap .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.menu-first{
+  padding-left: 16px;
 }
