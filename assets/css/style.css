@@ -4862,7 +4862,7 @@ nav ul {
   }
   .header-small-device.small-device-ptb-1 {
     padding: 12px 0 9px;
-}
+  }
 }
 .mobile-header-active .clickalbe-sidebar-wrap .sidebar-close {
   position: absolute;
@@ -19465,4 +19465,128 @@ ul.avera-menu > li {
   .mobile-menu
   li.menu-first {
   padding-left: 16px;
+}
+
+/* MAİN UL */
+.main-ul {
+  text-align: center;
+  text-transform: uppercase;
+}
+.header-offer-wrap-5 h3 a {
+  color: #e81d25;
+}
+.header-offer-wrap-5 h3 a i {
+  margin-right: 5px;
+}
+.header-offer-wrap-5 {
+  padding: 13px 10px 11px;
+}
+
+.category-menu {
+  width: 267px;
+  padding: 0 0 3px;
+}
+.category-menu nav > ul > li .category-menu-dropdown .single-category-menu h4 {
+  margin-bottom: 10px;
+}
+.category-menu nav > ul > li {
+  position: unset;
+}
+.category-menu nav > ul > li:hover .category-menu-dropdown {
+  height: 100%;
+  padding: 20px 25px 20px 25px;
+}
+.category-menu
+  nav
+  > ul
+  > li
+  .category-menu-dropdown
+  .single-category-menu
+  ul
+  li {
+  padding: 0 0 6px;
+}
+.category-menu
+  nav
+  > ul
+  > li
+  .category-menu-dropdown
+  .single-category-menu.ct-menu-mrg-bottom {
+  margin-bottom: 10px;
+}
+.category-menu nav > ul > li > a {
+  padding: 0 17px;
+  font-size: 15px;
+}
+.category-menu nav > ul > li:hover .category-menu-dropdown {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-menu nav > ul > li .category-menu-dropdown .single-category-menu {
+  display: inline-block;
+  width: 33%;
+  float: unset;
+}
+.category-menu
+  nav
+  > ul
+  > li
+  .category-menu-dropdown
+  .single-category-menu.ct-menu-mrg-left {
+  padding-left: 4px;
+}
+
+.category-menu nav > ul > li:hover > a,
+.category-menu nav > ul > li:hover > a span {
+  color: #e81d25;
+}
+.single-category-menu h4 a:hover {
+  color: #e81d25;
+}
+.category-menu
+  nav
+  > ul
+  > li
+  .category-menu-dropdown
+  .single-category-menu
+  ul
+  li
+  a:hover {
+  color: #e81d25;
+}
+.at-about-fab {
+  z-index: 999997;
+  position: fixed;
+  left: 40px;
+  bottom: 50px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.at-about-fab img {
+  width: 70%;
+  height: auto;
+}
+.at-about-fab a {
+  cursor: pointer;
+  color: #25d366;
+  text-align: center;
+  display: inline-block;
+}
+.at-about-fab a i {
+  font-size: 50px;
+  margin-top: 10px;
 }
