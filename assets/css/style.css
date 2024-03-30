@@ -19593,3 +19593,17 @@ ul.avera-menu > li {
   font-size: 50px;
   margin-top: 10px;
 }
+@media(max-width:576px){
+  .at-about-fab {
+    z-index: 999997;
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    width: 73px;
+    height: 73px;
+  }
+  .at-about-fab a i {
+    font-size: 45px;
+    margin-top: 3px;
+}
+}
